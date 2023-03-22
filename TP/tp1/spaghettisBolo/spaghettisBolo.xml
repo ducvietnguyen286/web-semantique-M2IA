@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="spqghettisBolo.css" type="text/css"?>
+<!DOCTYPE recette SYSTEM "recette.dtd">
+<recette>
+  <infos>
+    <nom>Spaghettis à la sauce Bolognaise</nom>
+    <persons>6</persons> 
+  </infos>
+  
+  <ingrédients>
+    <ingrédient>  
+      <nom_ingr>spaghettis</nom_ingr>
+      <quantite unite="grammes">900 gr</quantite>
+    </ingrédient>
+
+    <ingrédient>
+      <nom_ingr>tomates</nom_ingr>
+      <quantite unite="nombre">6</quantite>
+    </ingrédient>
+
+    <ingrédient>
+      <nom_ingr>oignons</nom_ingr>
+      <quantite unite="nombre">3</quantite>
+    </ingrédient> 
+
+    <ingrédient>
+      <nom_ingr>boeuf haché</nom_ingr>
+      <quantite unite="grammes">300 gr</quantite>
+    </ingrédient>
+
+    <ingrédient>
+      <nom_ingr>porc haché</nom_ingr>
+      <quantite unite="grammes">300 gr</quantite>
+    </ingrédient>
+
+    <ingrédient>
+      <nom_ingr>huile d'olive</nom_ingr>
+    </ingrédient>
+
+    <ingrédient>
+      <nom_ingr>ail</nom_ingr>
+    </ingrédient>
+
+    <ingrédient>
+      <nom_ingr>thym</nom_ingr>
+    </ingrédient>
+
+    <ingrédient>
+      <nom_ingr>sel</nom_ingr>
+    </ingrédient>
+
+    <ingrédient>
+      <nom_ingr>poivre</nom_ingr>
+    </ingrédient>
+
+    <ingrédient>
+      <nom_ingr>parmesan</nom_ingr>
+    </ingrédient>
+  </ingrédients>
+
+  <infos_sup>
+    <Préparation unite-prepa="minutes">20 minutes</Préparation>
+    <Cuisson unite-cuisson="heures">2h</Cuisson>
+    <Difficulté>facile</Difficulté>
+  </infos_sup>
+
+  <etapes>
+
+    <etape>
+      Emincez les oignons. Faites les revenir dans une poêle à l'huile d'olive. Ajoutez la viande mélangée. Laissez 5 min sur feu vif.
+    </etape>
+
+    <etape>
+      Ajoutez les tomates fraîches coupées en cubes, avec une gousse d'ail hachée et du thym. Salez, poivrez. Laissez mijoter environ 2 heures sur feu doux
+    </etape>
+
+    <etape>
+      Faites cuire les 900 gr. de spaghettis dans un grand volume d'eau bouillante salée, avec une cuiller à soupe d'huile d'olive. Surveillez la cuisson et arrêtez la quand les pâtes sont cuites mais craquent légèrement sous la dent ("al dente").
+    </etape>
+
+    <etape>
+    Servez les spaghettis avec la sauce chaude et du parmesan frais rapé. Bon appétit!
+    </etape>
+
+  </etapes>
+
+</recette>

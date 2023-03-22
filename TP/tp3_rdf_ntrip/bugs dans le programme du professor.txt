@@ -1,0 +1,2 @@
+quand je compile le programme ntriples-prof-win.exe du professor avec query:
+ntriples-prof-win.exe elmore.NT "? ? ?@en"

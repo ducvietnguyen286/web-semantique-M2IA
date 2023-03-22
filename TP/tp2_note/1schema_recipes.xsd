@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<!--dinh nghia cac elems đơn giản -->
+	<xs:element name="description" type="xs:string"/>
+	<xs:element name="title" type="xs:string"/>
+	<xs:element name="step" type="xs:string"/>
+	<xs:element name="comment" type="xs:string"/>
+
+	<!-- dinh nghia cac attributes -->
+	<xs:attribute name="name" type="xs:string"/>
+	<xs:attribute name="amount" type="xs:string"/>
+	<xs:attribute name="unit" type="xs:string"/>
+	<xs:attribute name="calories" type="xs:integer"/>
+	<xs:attribute name="fat" type="xs:integer"/>
+	<xs:attribute name="carbohydrates" type="xs:string"/>
+	<xs:attribute name="protein" type="xs:string"/>
+	<xs:attribute name="alcohol" type="xs:string"/>
+
+	<!-- dinh nghia cac complex elements-->
+	<xs:element name="preparation">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="step" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="ingredient">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ingredient" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="preparation" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute ref="name"/>
+			<xs:attribute ref="amount" use="optional"/>
+			<xs:attribute ref="unit" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="nutrition">
+		<xs:complexType>
+			<xs:attribute ref="calories"/>
+			<xs:attribute ref="fat"/>
+			<xs:attribute ref="carbohydrates"/>
+			<xs:attribute ref="protein"/>
+			<xs:attribute ref="alcohol" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="recipe">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="title"/>
+				<xs:element ref="ingredient" maxOccurs="unbounded"/>
+				<xs:element ref="preparation" minOccurs="0"/>
+				<xs:element ref="comment" minOccurs="0"/>
+				<xs:element ref="nutrition"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="collection">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="description"/>
+				<xs:element ref="recipe" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

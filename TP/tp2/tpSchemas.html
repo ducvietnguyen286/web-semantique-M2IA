@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)https://moodle.univ-artois.fr/cours/pluginfile.php/187366/mod_resource/content/1/tpSchemas.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Anne Parrain">
+    <link type="text/css" title="new" rel="stylesheet" href="./tpSchemas_files/newtp.css">
+    <link type="text/css" title="old" rel="alternate stylesheet" href="./tpSchemas_files/oldtp.css">
+    
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Exercices sur les XML-Schemas</h1>
+    </header>
+
+    <article class="theme">
+      <h1>Quelques liens</h1>
+<p>Voici <a href="http://www.w3.org/TR/xmlschema-1/">la spécification de XML schema </a>.</p>
+
+<p> Quelques autres liens :
+</p><ul>
+<li><a href="http://www.w3.org/TR/2012/REC-xmlschema11-1-20120405/">xml.com</a></li>
+<li><a href="http://www.w3schools.com/schema/default.asp">w3schools.com</a></li>
+<li><a href="http://www.zvon.org/xxl/xmlSchema2001Reference/Output/Schema/index.html">zvon</a></li>
+</ul>
+<p></p>
+
+   </article>
+
+
+    <article class="theme">
+      <h1>Ecrire un schéma et valider un document</h1>
+      <p>Pour valider un document xml par rapport à un schéma, celui-ci doit
+contenir dans son élément racine l'attribut</p>
+<pre><code>
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+</code></pre>
+
+<p>Par exemple, soit le schéma <code>monschema.xsd</code> : </p>
+
+<pre><code>
+&lt;?xml version="1.0" ?&gt;
+&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+&lt;xs:element name="prenom" type="xs:string"/&gt;
+&lt;/xs:schema&gt;
+</code></pre>
+
+
+<p>Soit le document XML <code>undoc.xml</code>
+
+</p><pre><code>
+&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
+
+&lt;prenom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+je ne donnerai pas mon nom.
+&lt;/prenom&gt;
+</code></pre>
+
+<p>On peut le valider à l'aide de <code>xmllint</code> par </p>
+<pre><code>
+&gt;xmllint --schema monschema.xsd undoc.xml
+</code></pre>
+
+<p>Le résultat est </p>
+<pre><code>
+&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
+&lt;prenom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+je ne donnerai pas mon nom.
+&lt;/prenom&gt;
+undoc.xml validates
+</code></pre>
+
+<section class="exercice">Testez l'exemple ci-dessus!
+</section>
+
+</article>
+
+<article class="theme">
+  <h1>A partir d'un Curriculum Vitae</h1>
+
+
+<p>On se base sur la DTD suivante :</p>
+<pre><code>
+&lt;!ELEMENT moncv (identification,section+)&gt;
+&lt;!ELEMENT identification (nom,prenom,mel,adresse,age?)&gt;
+&lt;!ELEMENT section (titre,etape+)&gt;
+&lt;!ELEMENT etape (titre,descriptif?)&gt;
+
+&lt;!ELEMENT nom (#PCDATA)&gt;
+&lt;!ELEMENT prenom (#PCDATA)&gt;
+&lt;!ELEMENT mel (#PCDATA)&gt;
+&lt;!ELEMENT adresse (#PCDATA)&gt;
+&lt;!ELEMENT age (#PCDATA)&gt;
+&lt;!ELEMENT titre (#PCDATA)&gt;
+&lt;!ELEMENT descriptif (#PCDATA)&gt;
+
+&lt;!ATTLIST section type NMTOKEN #REQUIRED&gt;
+</code></pre>
+
+<section class="exercice">
+<p>Ecrivez, dans un premier temps, le schéma XML équivalent à
+cette DTD. Pour plus de
+facilité, on déclarera tous les éléments en global, afin de simplifier
+(notamment) le test de votre schéma.</p>
+</section>
+
+<p>On désire maintenant assouplir notre DTD. Ecrivez les règles de schéma
+qui permettent de prendre en compte les modifications suivantes.</p>
+
+
+<section class="exercice"><p>L'identification
+d'une personne peut se faire en indiquant le prénom, ou
+le nom ou les deux.</p>
+</section>
+
+<section class="exercice"><p>On veut pouvoir remplacer le nom et le prénom par un surnom.</p>
+</section>
+
+<section class="exercice"><p>Complétez l'identification d'une personne par un élément
+contact qui contiendra plusieurs numéros de téléphone. Le numéro de
+téléphone doit être muni  d'un attribut qui permettra d'indiquer s'il
+s'agit d'un numéro de portable, domicile, travail...</p>
+</section>
+
+<section class="exercice"><p>Une section commence toujours par un titre, mais peut être
+suivie d'une série d'étapes et de paragraphes de texte en nombre
+quelconque. La seule contrainte est qu'il y ait au moins un paragraphe
+ou une étape (non, actuellement paragraphe n'est pas défini dans la DTD).</p>
+</section>
+
+<section class="exercice"><p>Une étape doit avoir deux attributs qui sont les
+  dates de la période de cette étape. La date de début est obligatoire
+  mais la date de fin est optionnelle.</p>
+</section>
+
+
+
+</article>
+
+<article class="theme">
+  <h1>Les observations ornithologiques</h1>
+<section class="exercice"> Proposez un schéma pour des documents contenant
+  des fiches d'observations ornithologiques comme le document <a href="https://moodle.univ-artois.fr/cours/pluginfile.php/187366/mod_resource/content/1/oiseaux2.xml">oiseaux2.xml</a>.
+</section>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="highlighter--hover-tools" style="display: none;">
+    <div id="highlighter--hover-tools--container">
+        <div class="highlighter--icon highlighter--icon-copy" title="Copy"></div>
+        <div class="highlighter--separator"></div>
+        <div class="highlighter--icon highlighter--icon-change-color" title="Change Color"></div>
+        <div class="highlighter--separator"></div>
+        <div class="highlighter--icon highlighter--icon-delete" title="Delete"></div>
+    </div>
+</div></body></html>

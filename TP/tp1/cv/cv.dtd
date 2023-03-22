@@ -1,0 +1,43 @@
+<!ELEMENT cv (etat_civil, diplomes, etudes, experiences_pro, competences,hobbys)>
+
+<!ELEMENT etat_civil (nom, prenom, date_naissance, tel, mail)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT date_naissance (#PCDATA)>
+<!ELEMENT tel (#PCDATA)>
+<!ELEMENT mail (#PCDATA)>
+
+<!ELEMENT diplomes (diplome+)>
+<!ELEMENT diplome (annee_obtention, nom_diplome, parcous?, mention?)>
+<!ELEMENT annee_obtention (#PCDATA)>
+<!ELEMENT nom_diplome (#PCDATA)>
+<!ELEMENT parcous (#PCDATA)>
+<!ELEMENT mention (#PCDATA)>
+
+<!ELEMENT etudes (formation+)>
+<!ELEMENT formation (annee_debut, annee_fin?, intitule, specialite?)>
+<!ELEMENT annee_debut (#PCDATA)>
+<!ELEMENT annee_fin (#PCDATA)>
+<!ELEMENT intitule (#PCDATA)>
+<!ELEMENT specialite (#PCDATA)>
+
+<!ELEMENT experiences_pro (experience_pro+)>
+<!ELEMENT experience_pro (date_debut, date_fin, entreprise, sujet)>
+<!ELEMENT date_debut (#PCDATA)>
+<!ELEMENT date_fin (#PCDATA)>
+<!ELEMENT entreprise (#PCDATA)>
+<!ELEMENT sujet (#PCDATA)>
+
+<!ELEMENT competences (langages_programmation, langues_etrangeres)>
+<!ELEMENT langages_programmation (langage+)>
+<!ELEMENT langage (#PCDATA)>
+<!ELEMENT langues_etrangeres (langue+)>
+<!ELEMENT langue (#PCDATA)>
+
+<!ELEMENT hobbys (hobby+)>
+<!ELEMENT hobby (#PCDATA)>
+
+<!ATTLIST tel type (personnel | professionnel) #REQUIRED>
+<!ATTLIST mail type (personnel | professionnel) #REQUIRED>
+<!ATTLIST langage niveau (faible | moyen | fort) #IMPLIED>
+<!ATTLIST langue niveau (faible | moyen | fort) #IMPLIED>

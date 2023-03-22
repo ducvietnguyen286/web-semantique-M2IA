@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE oiseaux SYSTEM "oiseaux.dtd">
+<oiseaux>
+  <fiche-observations auteur="L.Svensson" id-obs="obs1">
+    <lieu>Clairmarais</lieu>
+    <date>10-11-2006</date>
+    <espece nom="gorgebleue à miroir" nbre="2">
+      <famille>Turdidés</famille>
+      <description>aperçus dans les buissons à l'orée de la forêt</description>
+      <photo width="150" height="90" type="img/jpg" 
+	     href="http://fr.wikipedia.org/wiki/Image:Luscinia_svecica_tom_(Marek_Szczepanek)_small.jpg" />  
+    </espece>
+    <espece nom="grive mauvis" nbre="15">
+      <famille>Turdidés</famille>
+    </espece>
+    <espece nom="mouette rieuse" nbre="1">
+      <famille>Laridés</famille>
+      <description>rapidement, en vol</description>
+    </espece>
+  </fiche-observations>
+  <fiche-observations auteur="O.Peterson" id-obs="obs2">
+    <lieu>Painchonvalle</lieu>
+    <date>02-12-2006</date>
+    <espece nom="loriot" nbre="5">
+      <famille>Oriolidés</famille>
+      <description>groupe de 5 loriots vus en vol au-dessus du terril
+      en allant vers Eleu</description>
+    </espece>
+    <espece nom="grive mauvis" nbre="20">
+      <famille>Turdidés</famille>
+      <description>en migration probablement.</description>
+    </espece>
+    <espece nom="perdrix grise" nbre="15">
+      <famille>Phasianidés</famille>
+      <description>groupe de perdrix lâchées pour la chasse... au
+      milieu de la route en contrebas du terril.</description>
+      <photo width="100" height="40" type="img/jpg"
+	     href="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Perdix_perdix_%28Marek_Szczepanek%29.jpg/250px-Perdix_perdix_%28Marek_Szczepanek%29.jpg" />
+    </espece>
+  </fiche-observations>
+  <fiche-observations auteur="M. Yoop" id-obs="obs3">
+    <lieu>étangs de Thumeries</lieu>
+    <date>16-12-2006</date>
+    <espece nom="foulque macroule" nbre="150">
+      <famille>Rallidés</famille>
+      <description>colonie hivernante</description>
+      <photo width="280" height="120" type="img/jpg" 
+	     href="http://upload.wikimedia.org/wikipedia/commons/3/34/Coot-231.jpg" />
+    </espece>
+    <espece nom="cygne tuberculé" nbre="2">
+      <famille>Cygnes</famille>
+      <description>cygnes hivernant sur le site</description>
+    </espece>
+    <espece nom="fuligule milouin" nbre="30">
+      <famille>Canards plongeurs</famille>
+      <photo width="260" height="180" type="img/jpg" 
+	     href="http://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Aythya_ferina_%28Marek_Szczepanek%29.jpg/250px-Aythya_ferina_%28Marek_Szczepanek%29.jpg" />
+    </espece>
+  </fiche-observations>
+  <fiche-observations auteur="M. Yoop" id-obs="obs4">
+    <lieu>Painchonvalle</lieu>
+    <date>18-12-2006</date>
+    <espece nom="traquet motteux" nbre="1">
+      <famille>Turdidés</famille>
+      <photo width="340" height="220" type="img/jpg"
+	     href="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Oenanthe_oenanthe_01_II.jpg/250px-Oenanthe_oenanthe_01_II.jpg" />
+    </espece>
+    <espece nom="grive mauvis" nbre="8">
+      <famille>Turdidés</famille>
+    </espece>
+  </fiche-observations>
+</oiseaux>

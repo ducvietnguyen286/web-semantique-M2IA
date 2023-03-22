@@ -1,0 +1,19 @@
+infos, nom, personnes, ingrédients, ingrédient, infos_sup,preparation, cuisson,difficulte,etapes,etape{
+ display: block;
+}
+infos, infos_sup, etapes{
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+}
+
+ingrédients{
+	background-color: lightblue;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+}
+
+etapes{
+	background-color: lightgreen;
+}

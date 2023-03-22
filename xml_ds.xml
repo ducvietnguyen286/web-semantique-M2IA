@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:ex="http://ex.fr/">
+<!--4 -->
+	<ex:A rdf:about="ex:a">
+		<ex:r1>
+			<ex:B>
+				<ex:r2 rdf:resource="ex:c" />
+					<ex:r3 rdf:datatype="ex:d">toto</ex:r3>
+			</ex:B>
+		</ex:r1>
+	</ex:A>
+<!--4 -->
+<!--1 -->
+	<rdf:Description rdf:about="ex:d">
+		<ex:r1 rdf:resource="ex:a"/>
+		<ex:r1 rdf:nodeID="n1"/>
+	</rdf:Description>
+<!--1 -->
+<!--2 -->
+	<rdf:Description rdf:nodeID="n1">
+		<ex:r2 rdf:resource="ex:d"/>
+		<ex:r4>17</ex:r4>
+		<!--<ex:r5> toto le castor</ex:r5>-->
+	</rdf:Description>
+<!--2 -->
+<!--3 -->
+	<ex:A rdf:nodeID="n1"/>
+<!--3 -->
+	<rdf:Description rdf:about="ex:e"/>
+</rdf:RDF>

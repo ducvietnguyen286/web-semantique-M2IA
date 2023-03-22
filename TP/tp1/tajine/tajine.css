@@ -1,0 +1,23 @@
+infos,nom,personnes,ingredients,ingredient,preparation,cuisson,difficulte,etapes,etape{
+	display: block;
+}
+
+infos,etapes{
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+}
+
+ingredients{
+	background-color: lightblue;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+}
+
+etapes{
+	background: lightgreen;
+}
+infos{
+	background-color: lightcyan;
+}

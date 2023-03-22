@@ -1,0 +1,17 @@
+<!ELEMENT recette (infos, ingrédients, infos_sup, etapes)>
+<!ELEMENT infos (nom, persons)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT persons (#PCDATA)>
+<!ELEMENT ingrédients (ingrédient+)>
+<!ELEMENT ingrédient (nom_ingr,quantite?)>
+<!ELEMENT nom_ingr (#PCDATA)>
+<!ELEMENT quantite (#PCDATA)>
+<!ELEMENT infos_sup (Préparation, Cuisson, Difficulté)>
+<!ELEMENT Préparation (#PCDATA)>
+<!ELEMENT Cuisson (#PCDATA)>
+<!ELEMENT Difficulté (#PCDATA)>
+<!ELEMENT etapes (etape+)>
+<!ELEMENT etape (#PCDATA)>
+<!ATTLIST quantite unite (grammes|nombre) #REQUIRED>
+<!ATTLIST Préparation unite-prepa (minutes|heures) #REQUIRED>
+<!ATTLIST Cuisson unite-cuisson (minutes|heures) #REQUIRED>

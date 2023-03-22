@@ -1,0 +1,110 @@
+<http://rdfa.info/play/#elmore> <https://schema.org/jobTitle> "short story writer"@en .
+<http://rdfa.info/play/#tarantino> <https://schema.org/knows> <http://rdfa.info/play/#elmore> .
+_:fb060c8033c214d94815e6d0a11a28db9b5 <https://schema.org/title> "Reservoir Dogs"@en .
+_:fb060c8033c214d94815e6d0a11a28db9b7 <https://schema.org/title> "From Dusk till Dawn"@en .
+<http://rdfa.info/play/#sight> <https://schema.org/abstract> "\n            Out of Sight is a 1996 crime fiction novel by\n            Elmore Leonard.\n        "@en .
+_:fb060c8033c214d94815e6d0a11a28db9b7 <https://schema.org/genre> "horror comedy"@en .
+<http://rdfa.info/play/#labrava> <https://schema.org/title> "LaBrava"@en .
+<http://rdfa.info/play/#elmore> <https://schema.org/givenName> "Elmore John"@en .
+<http://rdfa.info/play/#tarantino> <https://schema.org/owns> _:fb060c8033c214d94815e6d0a11a28db9b5 .
+<http://rdfa.info/play/#brown> <https://schema.org/isBasedOn> <http://rdfa.info/play/#rumpunch> .
+_:fb060c8033c214d94815e6d0a11a28db9b3 <https://schema.org/name> "Riding the\n                    Rap"@en .
+_:fb060c8033c214d94815e6d0a11a28db9b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<http://rdfa.info/play/#labrava> <https://schema.org/award> "1984 Edgar Award for Best Novel"@en .
+<http://rdfa.info/play/#shorty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<http://rdfa.info/play/#shorty> <https://schema.org/copyrightYear> "1990"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://rdfa.info/play/#labrava> <https://schema.org/author> <http://rdfa.info/play/#elmore> .
+<http://rdfa.info/play/#tarantino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<http://rdfa.info/play/#tarantino> <https://schema.org/owns> _:fb060c8033c214d94815e6d0a11a28db9b6 .
+<http://rdfa.info/play/#tarantino> <https://schema.org/jobTitle> "screenwriter"@en .
+<http://rdfa.info/play/#swag> <https://schema.org/copyrightYear> "1976"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://rdfa.info/play/#sight> <https://schema.org/abstract> "\n            Jack Foley, a \"gentleman bank robber\" arranges a break-out from a Florida jail. The plan is interrupted by\n            shotgun toting Federal Marshal Karen Sisco.\n            The pair end up in the trunk of the getaway car, where they find they have a mutual interest: classic\n            Hollywood movies.\n        "@en .
+_:fb060c8033c214d94815e6d0a11a28db9b1 <https://schema.org/name> "Hombre"@en .
+<http://rdfa.info/play/#shorty> <https://schema.org/abstract> "\n            The story centers on Ernesto \"Chili\" Palmer, a small-time loan shark based in Miami.\n            After a run-in with mobster Ray \"Bones\" Barboni, Chili goes to Las Vegas in pursuit of Leo Devoe,\n            a dry cleaner who has scammed an airline out of $300,000 in life insurance by faking his own death,\n            as well as avoiding his $10,000 debt to Chili's employers.\n        "@en .
+<http://rdfa.info/play/#road-dogs> <https://schema.org/mentions> <http://rdfa.info/play/#sight> .
+<http://rdfa.info/play/#shorty> <https://schema.org/abstract> "Get Shorty is a 1990\n                novel by American novelist Elmore Leonard."@en .
+<http://rdfa.info/play/#rumpunch> <https://schema.org/image> <https://upload.wikimedia.org/wikipedia/en/3/33/Rum_punch_first_edition.jpg> .
+<http://rdfa.info/play/#tarantino> <https://schema.org/owns> <http://rdfa.info/play/#brown> .
+<http://rdfa.info/play/#elmore> <https://schema.org/contributor> <http://rdfa.info/play/#brown> .
+<http://rdfa.info/play/#elmore> <https://schema.org/owns> _:fb060c8033c214d94815e6d0a11a28db9b1 .
+<http://rdfa.info/play/#road-dogs> <https://schema.org/abstract> "\n            Road Dogs is a 2009 novel by author Elmore Leonard.\n            It continues the stories of bank robber Jack Foley (Out of\n                Sight),\n            Cundo Rey (LaBrava),\n            and Dawn Navarro (Riding the\n                    Rap).\n        "@en .
+<http://rdfa.info/play/#rumpunch> <https://schema.org/copyrightYear> "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://rdfa.info/play/#elmore> <https://schema.org/jobTitle> "screenwriter"@en .
+<http://rdfa.info/play/#shorty> <https://schema.org/title> "Get Shorty"@en .
+<http://rdfa.info/play/#swag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<http://rdfa.info/play/#elmore> <https://schema.org/familyName> "Leonard"@en .
+_:fb060c8033c214d94815e6d0a11a28db9b6 <https://schema.org/copyrightYear> "1994"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://rdfa.info/play/#tarantino> <https://schema.org/birthDate> "1963-27-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://rdfa.info/play/#elmore> <https://schema.org/image> <https://upload.wikimedia.org/wikipedia/commons/4/4d/Elmore_Leonard.jpg> .
+<http://rdfa.info/play/#tarantino> <https://schema.org/jobTitle> "film director"@en .
+<http://rdfa.info/play/#elmore> <https://schema.org/owns> <http://rdfa.info/play/#swag> .
+_:fb060c8033c214d94815e6d0a11a28db9b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<http://rdfa.info/play/#sight> <https://schema.org/copyrightYear> "1996"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:fb060c8033c214d94815e6d0a11a28db9b7 <https://schema.org/copyrightYear> "1996"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://rdfa.info/play/#shorty> <https://schema.org/author> <http://rdfa.info/play/#elmore> .
+<http://rdfa.info/play/#elmore> <https://schema.org/owns> <http://rdfa.info/play/#shorty> .
+<http://rdfa.info/play/#brown> <https://schema.org/title> "Jackie Brown"@en .
+<http://rdfa.info/play/#rumpunch> <https://schema.org/title> "Rum Punch"@en .
+<http://rdfa.info/play/#road-dogs> <https://schema.org/title> "Road Dogs"@en .
+<http://rdfa.info/play/#labrava> <https://schema.org/image> <https://upload.wikimedia.org/wikipedia/en/2/2e/LaBrava.jpg> .
+<http://rdfa.info/play/#elmore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+_:fb060c8033c214d94815e6d0a11a28db9b6 <https://schema.org/genre> "crime comedy"@en .
+<http://rdfa.info/play/#elmore> <https://schema.org/jobTitle> "novelist"@en .
+<http://rdfa.info/play/#sight> <https://schema.org/relation> <http://rdfa.info/play/#road-dogs> .
+<http://rdfa.info/play/#labrava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<http://rdfa.info/play/#elmore> <https://schema.org/deathDate> "2013-08-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://rdfa.info/play/#rumpunch> <https://schema.org/subjectOf> <http://rdfa.info/play/#brown> .
+<http://rdfa.info/play/#rumpunch> <https://schema.org/author> <http://rdfa.info/play/#elmore> .
+<http://rdfa.info/play/#road-dogs> <https://schema.org/mention> _:fb060c8033c214d94815e6d0a11a28db9b3 .
+_:fb060c8033c214d94815e6d0a11a28db9b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Movie> .
+<http://rdfa.info/play/#tarantino> <https://schema.org/givenName> "Quentin Jerome"@en .
+<http://rdfa.info/play/#swag> <https://schema.org/title> "Swag"@en .
+<http://rdfa.info/play/#tarantino> <https://schema.org/jobTitle> "actor"@en .
+<http://rdfa.info/play/#road-dogs> <https://schema.org/image> <https://upload.wikimedia.org/wikipedia/en/e/e4/RoadDogsNovel.jpg> .
+<http://rdfa.info/play/#sight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+_:fb060c8033c214d94815e6d0a11a28db9b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Movie> .
+<http://rdfa.info/play/> <http://www.w3.org/ns/rdfa#usesVocabulary> <https://schema.org/> .
+<http://rdfa.info/play/#rumpunch> <https://schema.org/abstract> "\n            Rum Punch is a 1992 novel written by Elmore Leonard.\n        "@en .
+<http://rdfa.info/play/#sight> <https://schema.org/title> "Out of Sight"@en .
+<http://rdfa.info/play/#labrava> <https://schema.org/abstract> "LaBrava, the 1983 novel\n                by author Elmore Leonard, follows the story of Joe\n                LaBrava, former Secret Service agent."@en .
+<http://rdfa.info/play/#labrava> <https://schema.org/copyrightYear> "1983"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:fb060c8033c214d94815e6d0a11a28db9b5 <https://schema.org/copyrightYear> "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:fb060c8033c214d94815e6d0a11a28db9b5 <https://schema.org/genre> "crime thriller"@en .
+<http://rdfa.info/play/#brown> <https://schema.org/author> <http://rdfa.info/play/#Tarantino> .
+<http://rdfa.info/play/#tarantino> <https://schema.org/familyName> "Tarantino"@en .
+<http://rdfa.info/play/#elmore> <https://schema.org/owns> _:fb060c8033c214d94815e6d0a11a28db9b2 .
+<http://rdfa.info/play/#tarantino> <https://schema.org/image> <https://upload.wikimedia.org/wikipedia/commons/0/0b/Quentin_Tarantino_by_Gage_Skidmore.jpg> .
+<http://rdfa.info/play/#rumpunch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<http://rdfa.info/play/#brown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Movie> .
+<http://rdfa.info/play/> <https://schema.org/title> "Elmore Leonard et son oeuvre"@fr .
+<http://rdfa.info/play/#tarantino> <https://schema.org/nationality> <ISO3166-2:US> .
+<http://rdfa.info/play/#brown> <https://schema.org/genre> "crime film"@en .
+<http://rdfa.info/play/#elmore> <https://schema.org/nationality> <ISO3166-2:US> .
+<http://rdfa.info/play/#swag> <https://schema.org/image> <https://upload.wikimedia.org/wikipedia/en/1/12/Swag-book_cover.jpg> .
+<http://rdfa.info/play/#swag> <https://schema.org/genre> "crime novel"@en .
+<http://rdfa.info/play/#elmore> <https://schema.org/owns> <http://rdfa.info/play/#rumpunch> .
+<http://rdfa.info/play/#tarantino> <https://schema.org/jobTitle> "producer"@en .
+<http://rdfa.info/play/#brown> <https://schema.org/copyrightYear> "1997"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://rdfa.info/play/#tarantino> <https://schema.org/contributor> _:fb060c8033c214d94815e6d0a11a28db9b7 .
+_:fb060c8033c214d94815e6d0a11a28db9b4 <https://schema.org/name> "Pam Grier"@en .
+<http://rdfa.info/play/#road-dogs> <https://schema.org/copyrightYear> "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:fb060c8033c214d94815e6d0a11a28db9b2 <https://schema.org/name> "Mr. Majestyk"@en .
+<http://rdfa.info/play/#swag> <https://schema.org/abstract> "\n            Frank Ryan is an almost honest used car salesman, who after deliberately not testifying against car thief\n            Ernest \"Stick\" Stickley, Jr., thinks of a foolproof plan for them to perform armed robberies. The plan is\n            about simple everyday armed robbery. Supermarkets, bars, liquor stores, gas stations, etc. Because the\n            statistics prove that this armed robbery pays the most for the least amount of risk, they start their\n            business and earn three to five thousand dollars a week. To prevent getting caught Frank introduces 10\n            golden rules for successful armed robbery.\n        "@en .
+_:fb060c8033c214d94815e6d0a11a28db9b6 <https://schema.org/title> "Pulp Fiction"@en .
+<http://rdfa.info/play/#shorty> <https://schema.org/image> <https://upload.wikimedia.org/wikipedia/en/b/bf/Get_Shorty_%2528novel%2529.jpg> .
+<http://rdfa.info/play/#brown> <https://schema.org/actor> _:fb060c8033c214d94815e6d0a11a28db9b4 .
+<http://rdfa.info/play/> <https://schema.org/title> "Elmore Leonard and his works"@en .
+<http://rdfa.info/play/#tarantino> <https://schema.org/copyrightYear> "1997"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+_:fb060c8033c214d94815e6d0a11a28db9b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<http://rdfa.info/play/#brown> <https://schema.org/director> <http://rdfa.info/play/#Tarantino> .
+<http://rdfa.info/play/#elmore> <https://schema.org/owns> <http://rdfa.info/play/#sight> .
+<http://rdfa.info/play/#sight> <https://schema.org/image> <https://upload.wikimedia.org/wikipedia/en/a/a7/Out_of_Sight_Elmore_Leonard_book_cover.jpg> .
+<http://rdfa.info/play/#elmore> <https://schema.org/birthDate> "1925-10-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:fb060c8033c214d94815e6d0a11a28db9b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Movie> .
+<http://rdfa.info/play/#road-dogs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<http://rdfa.info/play/#brown> <https://schema.org/abstract> "\n            Jackie Brown is a 1997 American crime film\n            written and directed by Quentin Tarantino\n            and starring Pam Grier in the\n            title role.\n            The film is an adaptation of Elmore Leonard's 1992 novel Rum\n                Punch.\n        "@en .
+<http://rdfa.info/play/#road-dogs> <https://schema.org/author> <http://rdfa.info/play/#elmore> .
+_:fb060c8033c214d94815e6d0a11a28db9b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<http://rdfa.info/play/#road-dogs> <https://schema.org/mentions> <http://rdfa.info/play/#labrava> .
+<http://rdfa.info/play/#brown> <https://schema.org/image> <https://upload.wikimedia.org/wikipedia/en/8/89/Jackie_Brown_%25281997%2529.png> .
+<http://rdfa.info/play/#sight> <https://schema.org/author> <http://rdfa.info/play/#elmore> .

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="tajine.css" type="text/css"?>
+<!DOCTYPE recette SYSTEM "recette.dtd">
+<recette>
+	<infos>
+		<nom>Tajine d'agneau aux pruneaux</nom>
+	</infos>
+	<infos_sup>	
+		<preparation unite-prepa="minutes">20 mn</preparation>
+		<cuisson unite-cuisson="heures">1h30</cuisson>
+		<difficulte>simple</difficulte>
+	</infos_sup>
+	<infos>
+		<personnes>6</personnes>
+	</infos>
+	<ingredients>
+		<ingredient>
+			<nom_ingr>pruneaux</nom_ingr>
+			<quantite unite="grammes">500 g</quantite>
+		</ingredient>
+		<ingredient>
+			<nom_ingr>thé chaud</nom_ingr>
+		</ingredient>
+		<ingredient>
+			<nom_ingr>oignons</nom_ingr>
+			<quantite unite="grammes">500 g</quantite>
+		</ingredient>
+		<ingredient>
+			<nom_ingr>huile olive</nom_ingr>
+		</ingredient>
+		<ingredient>
+			<nom_ingr>épaule d'agneau coupée en morceaux</nom_ingr>
+			<quantite unite="kilogrammes">1,5 kg</quantite>
+		</ingredient>
+		<ingredient>
+			<nom_ingr>gousses ail</nom_ingr>
+			<quantite unite="nombre">2</quantite>
+		</ingredient>
+		<ingredient>
+			<nom_ingr>cannelle</nom_ingr>
+			<quantite unite="cuillere_cafe">1/2 cuillère à café</quantite>
+		</ingredient>
+		<ingredient>
+			<nom_ingr>gingembre</nom_ingr>
+			<quantite unite="cuillere_cafe">1/2 cuillère à café</quantite>
+		</ingredient>
+		<ingredient>
+			<nom_ingr>safran</nom_ingr>
+			<quantite unite="dosette">1</quantite>
+		</ingredient>
+		<ingredient>
+			<nom_ingr>grains de coriandre écrasés</nom_ingr>
+		</ingredient>
+		<ingredient>
+			<nom_ingr>amandes émondées</nom_ingr>
+		</ingredient>
+		<ingredient>
+			<nom_ingr>miel</nom_ingr>
+			<quantite unite="cuillere_soupe">3 cuillères à soupe</quantite>
+		</ingredient>
+	</ingredients>
+	<etapes>
+		<etape>
+			Faites tremper les 500 g de pruneaux dans du thé chaud. Faites revenir les oignons émincés dans l'huile d'olive. Quand ils sont dorés, retirez-les et remplacez-les par la viande.
+		</etape>
+		<etape>
+			Lorsque les morceaux sont bien dorés, mettez-les dans une cocotte avec les oignons. Salez et poivrez. Ajoutez l'ail écrasé, la cannelle, le gingembre, le safran et les grains de coriandre. Couvrez d'eau et faites cuire 1 heure à feu doux.
+		</etape>
+		<etape>
+			Ajoutez ensuite les pruneaux égouttés, puis poursuivez la cuisson 20 min à couvert.
+		</etape>
+		<etape>
+			Faites revenir les amandes dans un peu de beurre chaud. Egouttez-les puis ajoutez-les à la viande avec le miel.
+		</etape>
+		<etape>
+			Laissez cuire encore 5 min sans couvrir.
+		</etape>
+	</etapes>
+</recette>

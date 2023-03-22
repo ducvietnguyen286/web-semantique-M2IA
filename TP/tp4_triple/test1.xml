@@ -1,0 +1,12 @@
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:ex="http://www.example.org"
+	xmlns:schema="https://schema.org/">
+<rdf:Description rdf:about="ex:totor">
+	<rdf:type rdf:resource="schema:Person"/>
+	<schema:name>Totor le Castor</schema:name>
+</rdf:Description>
+<rdf:Description rdf:about="schema:name">
+	<rdf:type rdf:resource="rdf:property"/>
+</rdf:Description>
+</rdf:RDF>

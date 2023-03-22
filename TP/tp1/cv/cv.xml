@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="cv.css" type="text/css"?>
+<!DOCTYPE cv SYSTEM "cv.dtd">
+
+<cv>
+	<etat_civil>
+		<nom>NGUYEN</nom>
+		<prenom>Duc Viet</prenom>
+		<date_naissance>28-06-1994</date_naissance>
+		<tel type="personnel">07 72 05 37 99</tel>
+		<mail type="personnel"> ducviet.nguyen@gmail.com</mail>
+	</etat_civil>
+
+	<diplomes>
+		<diplome>
+			<annee_obtention>2020</annee_obtention>
+			<nom_diplome>Licence Informatique</nom_diplome>
+			<mention>Très bien</mention>
+		</diplome>
+		<diplome>
+			<annee_obtention>2016</annee_obtention>
+			<nom_diplome>Ingenieur Technologie d'Information</nom_diplome>
+			<mention>Bien</mention>
+		</diplome>
+		<diplome>
+			<annee_obtention>2012</annee_obtention>
+			<nom_diplome>Baccalauréat</nom_diplome>
+			<parcous> maths, physique, chimie </parcous>
+			<mention>Bien</mention>
+		</diplome>
+	</diplomes>
+
+	<etudes>
+		<formation>
+			<annee_debut>2020</annee_debut>
+			<intitule>Master Informatique</intitule>
+			<specialite>Intelligence Artificielle</specialite>
+		</formation>
+		<formation>
+			<annee_debut>2019</annee_debut>
+			<annee_fin>2020</annee_fin>
+			<intitule>Licence Informatique</intitule>
+		</formation>
+	</etudes>
+
+	<experiences_pro>
+		<experience_pro>
+			<date_debut>Juin 2021</date_debut>
+			<date_fin>Avril 2021</date_fin>
+			<entreprise>CRIL</entreprise>
+			<sujet>Réseau euronal</sujet>
+		</experience_pro>
+		<experience_pro>
+			<date_debut>Juin 2019</date_debut>
+			<date_fin>Avril 2019</date_fin>
+			<entreprise>CRIL</entreprise>
+			<sujet>Programmation Embarquée</sujet>
+		</experience_pro>
+	</experiences_pro>
+
+	<competences>
+		<langages_programmation>
+			<langage niveau = "moyen">C</langage>
+			<langage niveau = "moyen">Python</langage>
+			<langage niveau = "faible">Java</langage>
+		</langages_programmation>
+		<langues_etrangeres>
+			<langue niveau="moyen">Fracais</langue>
+			<langue niveau="moyen">Anglais</langue>
+			<langue niveau="faible">Chinois</langue>
+		</langues_etrangeres>
+	</competences>
+
+	<hobbys>
+		<hobby>Jeux video</hobby>
+		<hobby>jogging</hobby>
+	</hobbys>
+</cv>

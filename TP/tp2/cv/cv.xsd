@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:complexType name="TIdentite">
+	<xs:choice>
+
+		<xs:element name="prenom" type="xs:string" />
+		<xs:element name="surnom" type="xs:string" />
+
+		<xs:sequence>
+			<xs:element name="nom" type="xs:string" />
+			<xs:element name="prenom" minOccurs="0" type="xs:string" />
+		</xs:sequence>
+
+	</xs:choice>
+</xs:complexType>
+	
+</xs: simpleType name="TTelType">
+
+	
+	
+		

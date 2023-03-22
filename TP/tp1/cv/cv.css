@@ -1,0 +1,53 @@
+etat_civil,date_naissance,tel,mail,
+diplomes,diplome,etudes,formation,experiences_pro,experience_pro,
+competences,langages_programmation,langage, langues_etrangeres,langue,hobbys,
+formation, hobby{
+	display: block;
+}
+
+etat_civil{
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+}
+diplomes{
+	background-color: lightblue;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+}
+
+etudes{
+	background-color: lightgreen;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	}
+
+experiences_pro{
+	background-color: lightgray;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+}
+
+langages_programmation{
+	background-color: red;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+}
+
+langues_etrangeres{
+	background-color: lightcyan;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+}
+
+hobbys{
+	background-color: orange;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+}

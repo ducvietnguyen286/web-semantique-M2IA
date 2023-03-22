@@ -1,0 +1,17 @@
+<!ELEMENT oiseaux (fiche-observations+)>
+<!ELEMENT fiche-observations (lieu, date, espece+)>
+<!ELEMENT lieu (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT espece (famille, description?, photo?)>
+<!ELEMENT famille (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT photo (#PCDATA)>
+
+<!ATTLIST fiche-observations auteur CDATA #REQUIRED>
+<!ATTLIST fiche-observations id-obs ID #REQUIRED>
+<!ATTLIST espece nom CDATA #REQUIRED>
+<!ATTLIST espece nbre CDATA #REQUIRED>
+<!ATTLIST photo width CDATA #REQUIRED>
+<!ATTLIST photo height CDATA #REQUIRED>
+<!ATTLIST photo type CDATA #REQUIRED>
+<!ATTLIST photo href CDATA #REQUIRED>

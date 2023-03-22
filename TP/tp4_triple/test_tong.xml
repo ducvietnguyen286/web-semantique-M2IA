@@ -1,0 +1,225 @@
+<!--1 __________________________________________________________________________-->
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:ex="http://www.example.org"
+	xmlns:schema="https://schema.org/">
+<rdf:Description rdf:about="ex:totor">
+	<rdf:type rdf:resource="schema:Person"/>
+	<schema:name>Totor le Castor</schema:name>
+</rdf:Description>
+<rdf:Description rdf:about="schema:name">
+	<rdf:type rdf:resource="rdf:property"/>
+</rdf:Description>
+</rdf:RDF>
+
+
+
+@prefix ex: <http://www.example.org> .
+@prefix schema: <https://schema.org/> .
+
+ex:totor
+  a schema:Person ;
+  schema:name "Totor le Castor" .
+
+schema:name
+  a rdf:property .
+
+<!--2 __________________________________________________________________________-->
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:gr="http://purl.org/goodrelations/v1#"
+>
+  <gr:Location rdf:about="http://www.acme.com/#store">
+    <gr:name>Hepp's Happy Burger Restaurant</gr:name>
+    <gr:hasOpeningHoursSpecification>
+      <gr:OpeningHoursSpecification>
+        <gr:opens>08:00:00</gr:opens>
+        <gr:closes>20:00:00</gr:closes>
+        <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Wednesday"/>
+        <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Monday"/>
+        <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Tuesday"/>
+        <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Thursday"/>
+        <gr:hasOpeningHoursDayOfWeek rdf:resource="http://purl.org/goodrelations/v1#Friday"/>
+      </gr:OpeningHoursSpecification>
+    </gr:hasOpeningHoursSpecification>
+  </gr:Location>
+</rdf:RDF>
+
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+
+<http://www.acme.com/#store>
+  a gr:Location ;
+  gr:name "Hepp's Happy Burger Restaurant" ;
+  gr:hasOpeningHoursSpecification _:ns0 .
+
+_:ns0
+  a gr:OpeningHoursSpecification ;
+  gr:opens "08:00:00" ;
+  gr:closes "20:00:00" ;
+  gr:hasOpeningHoursDayOfWeek gr:Wednesday,  gr:Monday,  gr:Tuesday,  gr:Thursday,  gr:Friday .
+
+<http://www.acme.com/#store> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/goodrelations/v1#Location> .
+<http://www.acme.com/#store> <http://purl.org/goodrelations/v1#name> "Hepp's Happy Burger Restaurant" .
+<http://www.acme.com/#store> <http://purl.org/goodrelations/v1#hasOpeningHoursSpecification> _:ns0 .
+_:ns0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/goodrelations/v1#OpeningHoursSpecification> .
+_:ns0 <http://purl.org/goodrelations/v1#opens> "08:00:00" .
+_:ns0 <http://purl.org/goodrelations/v1#closes> "20:00:00" .
+_:ns0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.org/goodrelations/v1#Wednesday> .
+_:ns0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.org/goodrelations/v1#Monday> .
+_:ns0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.org/goodrelations/v1#Tuesday> .
+_:ns0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.org/goodrelations/v1#Thursday> .
+_:ns0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.org/goodrelations/v1#Friday> .
+
+<!--3 __________________________________________________________________________-->
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ex="http://example.org/">
+  <rdf:Description rdf:about="http://example.org/totor">
+    <rdf:type rdf:resource="http://example.org/Person"/>
+    <ex:bestFriend rdf:resource="http://example.org/Titi"/>
+    <ex:name>Totor le Castor</ex:name>
+    <ex:name xml:lang="en">Totor the Castor</ex:name>
+  </rdf:Description>
+  <ex:Person rdf:about="http://example.org/titi">
+    <ex:name>Titi</ex:name>
+  </ex:Person>
+</rdf:RDF>
+
+@prefix ex: <http://example.org/> .
+
+ex:totor
+  a ex:Person ;
+  ex:bestFriend ex:Titi ;
+  ex:name "Totor le Castor",  "Totor the Castor"@en .
+
+ex:titi
+  a ex:Person ;
+  ex:name "Titi" .
+
+<http://example.org/totor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Person> .
+<http://example.org/totor> <http://example.org/bestFriend> <http://example.org/Titi> .
+<http://example.org/totor> <http://example.org/name> "Totor le Castor" .
+<http://example.org/totor> <http://example.org/name> "Totor the Castor"@en .
+<http://example.org/titi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Person> .
+<http://example.org/titi> <http://example.org/name> "Titi" .
+<!--4 __________________________________________________________________________-->
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ex="http://example.org/">
+  <ex:Person rdf:about="http://example.org/totor">
+    <ex:bestFriend>
+        <ex:Person>
+            <ex:name>Titi</ex:name>
+            <ex:age rdf:datatype="http://example.org/integer">23</ex:age>
+        </ex:Person>
+    </ex:bestFriend>
+    <ex:enemy rdf:nodeID="tutu"/>
+    <ex:name>Totor le Castor</ex:name>
+    <ex:name xml:lang="en">Totor the Castor</ex:name>
+  </ex:Person>
+  <ex:Person rdf:nodeID="tutu">
+    <ex:name>Tutu</ex:name>
+  </ex:Person>
+</rdf:RDF>
+
+@prefix ex: <http://example.org/> .
+
+ex:totor
+  a ex:Person ;
+  ex:bestFriend _:ns0 ;
+  ex:enemy _:tutu ;
+  ex:name "Totor le Castor",  "Totor the Castor"@en .
+
+_:ns0
+  a ex:Person ;
+  ex:name "Titi" ;
+  ex:age "23"^^ex:integer .
+
+_:tutu
+  a ex:Person ;
+  ex:name "Tutu" .
+
+<http://example.org/totor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Person> .
+<http://example.org/totor> <http://example.org/bestFriend> _:ns0 .
+_:ns0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Person> .
+_:ns0 <http://example.org/name> "Titi" .
+_:ns0 <http://example.org/age> "23"^^ex:integer .
+<http://example.org/totor> <http://example.org/enemy> _:tutu .
+<http://example.org/totor> <http://example.org/name> "Totor le Castor" .
+<http://example.org/totor> <http://example.org/name> "Totor the Castor"@en .
+_:tutu <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Person> .
+_:tutu <http://example.org/name> "Tutu" .
+<!--5 __________________________________________________________________________-->
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ex="http://example.org/">
+  <rdf:Description rdf:about="http://example.org/totor">
+    <rdf:type rdf:resource="http://example.org/Person"/>
+    <ex:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</ex:age>
+    <ex:bestFriend rdf:resource="ex:Titi"/>
+    <ex:bestFriend rdf:nodeID="man1"/>
+    <ex:name>Totor le Castor</ex:name>
+    <ex:name xml:lang="en">Totor the Castor</ex:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="man1">
+    <rdf:type rdf:resource="http://example.org/Person"/>
+  </rdf:Description>
+  <ex:Person rdf:about="http://example.org/titi">
+    <ex:name>Titi</ex:name>
+  </ex:Person>
+</rdf:RDF>
+
+@prefix ex: <http://example.org/> .
+
+ex:totor
+  a ex:Person ;
+  ex:age "23"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+  ex:bestFriend ex:Titi,  _:man1 ;
+  ex:name "Totor le Castor",  "Totor the Castor"@en .
+
+_:man1
+  a rdf:Description,  ex:Person .
+
+ex:titi
+  a ex:Person ;
+  ex:name "Titi" .
+
+<http://example.org/totor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Person> .
+<http://example.org/totor> <http://example.org/age> "23"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/totor> <http://example.org/bestFriend> <http://example.org/Titi> .
+<http://example.org/totor> <http://example.org/bestFriend> _:man1 .
+<http://example.org/totor> <http://example.org/name> "Totor le Castor" .
+<http://example.org/totor> <http://example.org/name> "Totor the Castor"@en .
+_:man1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Description> .
+_:man1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Person> .
+<http://example.org/titi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Person> .
+<http://example.org/titi> <http://example.org/name> "Titi" .
+<!--6 __________________________________________________________________________-->
+<rdf:RDF	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:ex="http://www.example.org/"
+			xmlns:schema="https://schema.org/">
+	<rdf:Description rdf:about="ex:totor" xml:lang="fr">
+		<rdf:type rdf:resource="schema:Person"/>
+		<schema:name>Totor le Castor</schema:name>
+		<schema:name xml:lang="en">Totor le Castor EN</schema:name>
+	</rdf:Description>
+	<rdf:Description rdf:about="schema:name">
+		<rdf:type rdf:resource="rdf:property"/>
+	</rdf:Description>
+</rdf:RDF>
+
+@prefix ex: <http://www.example.org/> .
+@prefix schema: <https://schema.org/> .
+
+ex:totor
+  a schema:Person ;
+  schema:name "Totor le Castor"@fr,  "Totor le Castor EN"@en .
+
+schema:name
+  a rdf:property .
+
+<http://www.example.org/totor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<http://www.example.org/totor> <https://schema.org/name> "Totor le Castor"@fr .
+<http://www.example.org/totor> <https://schema.org/name> "Totor le Castor EN"@en .
+<https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#property> .

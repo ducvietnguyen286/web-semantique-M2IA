@@ -1,0 +1,14 @@
+<!ELEMENT moncv (identification,section+)>
+<!ELEMENT identification (nom,prenom,mel,adresse,age?)>
+<!ELEMENT section (titre,etape+)>
+<!ELEMENT etape (titre,descriptif?)>
+
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT mel (#PCDATA)>
+<!ELEMENT adresse (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT descriptif (#PCDATA)>
+
+<!ATTLIST section type NMTOKEN #REQUIRED>
